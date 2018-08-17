@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div id='header_holder'>
+	<img src="cpt2.png">
+		<div id='header'>
+			<div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='blue2'></div><div id='purple2'></div>
+		</div>
+	</div>
+<div>
+	
+</div>
+	<div>
+		<div id="map"></div>
+	</div>
+	<div id="destinationForm">
+		<form action="" method="get" name="direction" id="direction">
+			<input id="pac-input1" class="controls" type="text" placeholder="Votre point de depart">
+			<input id="pac-input" class="controls" type="text" placeholder="Votre destination">
+			<input type="button" value="OK" id="butt" class="button" onclick="javascript:calculate()">
+			<select id="selec">
+				<option value="" disabled selected hidden>Mode de transport</option>
+				<option value="DRIVING">Voiture</option>
+				<option value="TRANSIT">Transports</option>
+				<option value="WALKING">A pied</option>
+				<option value="BICYCLING">Velo</option>
+
+			</select>
+		</form>		
+	</div>
+	<br><br>
+	<div></div>
+
+	<div id="panel"></div>
+
+	<script type="text/javascript" src="script.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcDjxzmoLlM3uAMjTyPNzEB3SkFL2lLeI&libraries=places&callback=initMap">
+	</script>
+</body>
+</html>
